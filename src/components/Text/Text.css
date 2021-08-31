@@ -1,0 +1,17 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  align-items: flex-start;
+  text-align: center;
+} */
+
+.fade-in {
+  transition: opacity 1s ease;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+}

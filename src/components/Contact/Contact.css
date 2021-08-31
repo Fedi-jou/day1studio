@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.body {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  /*   background: linear-gradient(
+    108deg,
+    rgba(1, 147, 86, 1) 0%,
+    rgba(10, 201, 122, 1) 100% ) */
+  background-image: linear-gradient(326deg, #101522 0%, #010606 74%);
+}
+
+.container {
+  position: relative;
+  min-height: 100vh; /* height:500 */
+  display: flex;
+  align-items: center;
+  flex-direction: center; /* center */
+
+  /*
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;*/
+  /* max-width: 1100px; */
+  /* margin: 20px;
+  height: 600px; */
+  /* justify-content: space-between; */
+
+  /*  background: linear-gradient(
+    108deg,
+    rgba(1, 147, 86, 1) 0%,
+    rgba(10, 201, 122, 1) 100%)*/
+  /*  background-color: #861657;
+  background-image: linear-gradient(326deg, #101522 0%, #010606 74%); */
+}
+
+.container .formbox {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .formbox form {
+  position: relative;
+  width: 70%;
+  padding: 0 0 0 75px;
+}
+
+.container .formbox h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+.container .formbox form .inputbox {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.container .formbox form .inputbox:last-child {
+  margin-bottom: 0px;
+}
+
+.container .formbox form .inputbox input,
+.container .formbox form .inputbox textarea {
+  position: relative;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  resize: none;
+}
+
+.container .formbox form .inputbox textarea {
+  height: 100px;
+}
+.container .formbox form .inputbox input[type="submit"] {
+  background: #01bf71;
+  padding: 8px 20px;
+  margin-top: -10px;
+  width: 100px;
+  cursor: pointer;
+  background: #ff5064;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 10px;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+}
+
+.container .formbox form .inputbox input[type="submit"]:focus {
+  background: #1bfaad;
+  color: #fff;
+}
+
+.container .formbox form .inputbox span {
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  font-weight: 300;
+  display: inline-block;
+  pointer-events: none;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+.container .formbox form .inputbox input:focus ~ span,
+.container .formbox form .inputbox textarea:focus ~ span,
+.container .formbox form .inputbox input:valid ~ span,
+.container .formbox form .inputbox textarea:valid ~ span {
+  transform: translateY(-24px);
+  color: #1bfaad;
+  font-size: 14px;
+}
+.container .formbox form .inputbox input:focus,
+.container .formbox form .inputbox textarea:focus,
+.container .formbox form .inputbox input:valid,
+.container .formbox form .inputbox textarea:valid {
+  border-bottom-color: #fff;
+}
+
+.container .imgbox {
+  position: relative;
+  padding: 0 0 0 75;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+@media (max-width: 991px) {
+  .container .formbox {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .container .formbox form {
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+  }
+  .container .imgbx {
+    display: none;
+    padding: 0 50px;
+  }
+}

@@ -18,18 +18,19 @@ const Text = () => {
           fade: "fade-in",
         });
       }
-    }, 9000);
+    }, 3000);
 
     return () => clearInterval(timeout);
   }, [effect.fade]);
 
   return (
     <div>
+      Day 1 Studio
       <div className={effect.fade}>
         <Typical
           loop={Infinity}
           wrapper="b"
-          steps={["DAY 1 STUDIO", 3000, "Let the journey begin", 7000]}
+          steps={[" Let the journey begin ", 6000]}
         />
       </div>
     </div>

@@ -9,6 +9,7 @@ import { Homeobjone } from "../components/Infosection/data";
 import Services from "../components/Services";
 import Services1 from "../components/Test";
 import Footer from "../components/Footer";
+import Cube1 from "../components/swiper/Swiper";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const Home = () => {
       <Info {...Homeobjone} />
       <Services1 />
       <Services />
+      {/* <Cube1 /> */}
       <Finalcontact />
       <Footer />
     </>

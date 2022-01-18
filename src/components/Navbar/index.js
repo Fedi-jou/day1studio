@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { animateScroll as scroll } from "react-scroll";
-import logo from "../../images/logo.png";
+import logo from "../../logo.png";
 import {
   Nav,
   Navbarcontainer,
@@ -87,6 +87,18 @@ const Navbar = ({ toggle }) => {
               </Navlinks>
             </Navitem>
           </Navmenu>
+          {/*      <Navbtn>
+            <Navbtnlink
+              to="signin"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              sign in
+            </Navbtnlink>
+          </Navbtn> */}
         </Navbarcontainer>
       </Nav>
     </>

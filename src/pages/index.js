@@ -4,12 +4,18 @@ import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Herosection";
 import Info from "../components/Infosection";
+import Contact from "../components/Contact/Contact";
 import Finalcontact from "../components/Contactform/finalcontact";
-import { Homeobjone } from "../components/Infosection/data";
+
+import GameCard from "../GameCard";
+import {
+  Homeobjone,
+  Homeobjtwo,
+  Homeobjthree,
+} from "../components/Infosection/data";
 import Services from "../components/Services";
 import Services1 from "../components/Test";
 import Footer from "../components/Footer";
-import Cube1 from "../components/swiper/Swiper";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,9 +30,12 @@ const Home = () => {
       <Hero />
       <Info {...Homeobjone} />
       <Services1 />
+
+      {/* <Info {...Homeobjtwo} /> */}
       <Services />
-      {/* <Cube1 /> */}
+      {/* <Info {...Homeobjthree} /> */}
       <Finalcontact />
+
       <Footer />
     </>
   );

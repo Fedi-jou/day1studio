@@ -18,3 +18,37 @@ export const Homeobjone = {
   primary: true,
   darkText: true,
 };
+
+export const Homeobjtwo = {
+  // id: "services",
+  lightBg: true,
+  lightText: false,
+  lightTextdesc: false,
+  topline: "unlimited access",
+  headline: "unlimited transaction",
+  description: " get access to our exclusive app",
+  buttonlabell: "Learn More",
+  imgStart: true,
+  img: require("../../images/svg-2.svg").default,
+  alt: "two",
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const Homeobjthree = {
+  id: "signup",
+  lightBg: true,
+  lightText: false,
+  lightTextdesc: false,
+  topline: "Premuim bank",
+  headline: "unlimited transaction",
+  description: " get access to our exclusive app",
+  buttonlabell: "Start now",
+  imgStart: true,
+  img: require("../../images/svg-3.svg").default,
+  alt: "three",
+  dark: false,
+  primary: false,
+  darkText: true,
+};

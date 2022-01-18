@@ -21,6 +21,7 @@ const Services = () => {
         <Servicescard>
           <Servicesicon src={icon1} />
           <Servicesh2>Mea</Servicesh2>
+          {/* <Servicesp>we help you always </Servicesp> */}
         </Servicescard>
         <Servicescard>
           <Servicesicon src={icon2} />

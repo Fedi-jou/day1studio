@@ -10,10 +10,17 @@ import {
   Plancost,
   Featurelistitem,
   Backgroundsquare,
+  Actionbutton,
   Cardwrapper,
+  Th,
 } from "./Gamestyle.CSS";
 
 function GameCard() {
+  /*   const [features] = useState([
+    "Want to see your game on consoles? We can make it real on any platform.",
+    "10 domaine name",
+    "unlimited mails",
+  ]); */
   return (
     <>
       <Cardwrapper id={"services"}>
@@ -33,6 +40,8 @@ function GameCard() {
                 for you.
               </span>
             </Featurelistitem>
+            {/* 
+            <Actionbutton>Order now</Actionbutton> */}
           </Content>
         </Card>
         <Card>
@@ -50,6 +59,8 @@ function GameCard() {
                 platform.
               </span>
             </Featurelistitem>
+
+            {/* <Actionbutton>Order now</Actionbutton> */}
           </Content>
         </Card>
         <Card>
@@ -68,6 +79,8 @@ function GameCard() {
                 project in any sector.
               </span>
             </Featurelistitem>
+
+            {/* <Actionbutton>Order now</Actionbutton> */}
           </Content>
         </Card>
       </Cardwrapper>
